@@ -1,5 +1,7 @@
 # Navic — MERN route planner with a C++ algorithms engine
 
+**Live:** https://navic-dsa.vercel.app · every push to `main` deploys automatically on Vercel.
+
 Plan driving, walking and cycling routes anywhere in the world, and watch five classic graph
 algorithms — **Dijkstra, A\*, BFS, DFS and Floyd–Warshall** — race across a real 309,697-node
 OpenStreetMap road graph of Delhi.
