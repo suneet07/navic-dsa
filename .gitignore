@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+
+# build output
+dsa/build/
+frontend/dist/
+
+# generated from data/graph.ndjson.gz by `npm run prepare-data`
+data/generated/
+
+# environment
+.env
+.env.*
+!.env.example
+
+# misc
+.DS_Store
+*.log
+
+# Vercel CLI link
+.vercel
+
+# local tooling
+.claude/

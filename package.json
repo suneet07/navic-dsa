@@ -1,0 +1,19 @@
+{
+  "name": "navic",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Navic route planner — MERN stack with a C++ graph-algorithms engine (Dijkstra, A*, BFS, DFS, Floyd–Warshall).",
+  "scripts": {
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "build:dsa": "node scripts/build-dsa.js",
+    "test:dsa": "node scripts/build-dsa.js test",
+    "prepare-data": "npm --prefix backend run prepare-data",
+    "setup": "npm run install:all && npm run build:dsa && npm run prepare-data",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "start": "npm --prefix backend start",
+    "test": "npm run test:dsa && npm --prefix backend test && npm --prefix frontend test"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm --prefix backend install && npm --prefix frontend install",
+  "buildCommand": "bash scripts/vercel-build.sh",
+  "outputDirectory": "frontend/dist",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 60,
+      "includeFiles": "{dsa/build/navic-engine,data/generated/**,data/metadata.json}"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/network", "destination": "/network.geojson" },
+    { "source": "/api/:path*", "destination": "/api" }
+  ]
+}
